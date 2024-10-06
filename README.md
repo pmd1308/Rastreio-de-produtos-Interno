@@ -19,7 +19,7 @@ Pensei em orientação a objetos, por ser mais pragimatico e facil de implementa
 
 
 ```mermaid
-sequence Diagram
+classDiagram
     class Package {
         - String qrCode
         - String localizacao
