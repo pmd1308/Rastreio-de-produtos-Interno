@@ -50,7 +50,7 @@ classDiagram
     }
 
     class QrCodeService {
-        + BufferedImage gerarQRCode(String conteúdo)
+        + //Gatilhos para CRUD dos objetos
     }
 
     class GaiolaService {
