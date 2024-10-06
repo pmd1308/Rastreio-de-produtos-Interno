@@ -1,11 +1,10 @@
 # Sistema de gerenciamento interno de logistica com WMS implementado
 
-Bom, só para mostrar como eu sou foda, e tb pq é um puta erro algumas pessoas me mandarem calar a boca, tá aqui um sistema que resolve o problema da ordem de FIFO na Shoppe, e dado que sou um peão temporario meia boca com uma infancia fodida, isso só deixa mais incrivel. Sim, sei que falar desse jeito é falta de profissionalismo, mas acontece que se aguentei uma enrrabada da vida e fiz um puta bagulho complexo com meia duzia de interação e muita genialidade, posso dizer que convenções sociais são bestas perante da genialidade.
+Agora que estou mais calmo, posso dizer o proposito desse projeto kjkkkkkk
 
-Devo tudo as minhas relações, principalmente com a liderança, dado que posso ter as melhores ideias do mundo, mas se não forem revisadas por pessoas que sabem o que pode dar errado, pode virar um tumor. Obrigado Sandro, Chiquinho e Yasmin, se quiserem referencia ou participar, caso vá para frente e vire um projeto grande, vocês merecem os creditos também.
+O sistema é basicamente um prototipo de como implementar um sistema de localização, onde um pacote é representado na memoria, e através de parametros, localiza-lo, além de ter embutido um sistema de paletização através de gaiolas.
 
-
-## Depois ajusto para mais profissional, mas agora é pessoal e quero curtir
+Pensei em orientação a objetos, por ser mais pragimatico e facil de implementar.
 ## Desculpa o complexo de deus, é q fiz essa porra lombrado kkkkkkk
 
 ## Funcionalidades
@@ -20,7 +19,7 @@ Devo tudo as minhas relações, principalmente com a liderança, dado que posso 
 
 
 ```mermaid
-classDiagram
+sequence Diagram
     class Package {
         - String qrCode
         - String localizacao
@@ -34,7 +33,7 @@ classDiagram
         - List<Package> pacotes 
         + void adicionarPacote(Package pacote)
         + void removerPacote(String qrCode)
-        + boolean isVazia()
+        + boolean isVazia()v
     }
 
     class PackageRepository {
@@ -50,13 +49,13 @@ classDiagram
     }
 
     class QrCodeService {
-        + //Gatilhos para CRUD dos objetos
+        + BufferedImage gerarQRCode(String conteúdo)
     }
 
     class GaiolaService {
         - PackageRepository packageRepository
         + void adicionarPacoteNaGaiola(Gaiola gaiola, Package pacote)
-        + void removerPacoteNaGaiola(Gaiola gaiola, String qrCode)
+        + void remover PacoteGaola(Gaiola gaola, String qrCode)
         + boolean verificarOrdemFIFO(Gaiola gaiola)
     }
 
@@ -65,19 +64,11 @@ classDiagram
     GaiolaService o-- Gaiola
     Gaiola o-- Package
     GaiolaService o-- QrCodeService
-
 ```
 
 ## Contribuições
 Mais uma vez, caso qualquer um tenha uma ideia, fique a vontade para me chamar, não sendo meia noite, tá suave kkkk
-E um agradecimento a:
-Chico 
-Sandro
-Yasmin
-(Pe passem o Linkedin para referencia)
+
 
 ## Licença
-Esse projeto é licenciado sob a MIT License. Se você não sabe o que isso significa, basicamente, você pode fazer o que quiser com isso, só não venha me processar, beleza?
-
-
-PS: Projeto só pra mostrar o tamanho da minha pika, já que não está rolando remuneração, apenas o mérito, então vou curtir kkkk
+Esse projeto é licenciado sob a MIT License. Se você não sabe o que isso significa, basicamente, você pode fazer o que quiser com isso, só não venha me processar
