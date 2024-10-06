@@ -18,7 +18,7 @@ Devo tudo as minhas relações, principalmente com a liderança, dado que posso 
 
 
 ```mermaid
-sequence Diagram
+classDiagram
     class Package {
         - String qrCode
         - String localizacao
@@ -54,7 +54,7 @@ sequence Diagram
     class GaiolaService {
         - PackageRepository packageRepository
         + void adicionarPacoteNaGaiola(Gaiola gaiola, Package pacote)
-        + void remover PacoteGaola(Gaiola gaola, String qrCode)
+        + void removerPacoteNaGaiola(Gaiola gaiola, String qrCode)
         + boolean verificarOrdemFIFO(Gaiola gaiola)
     }
 
@@ -63,6 +63,7 @@ sequence Diagram
     GaiolaService o-- Gaiola
     Gaiola o-- Package
     GaiolaService o-- QrCodeService
+
 ```
 
 ## Contribuições
