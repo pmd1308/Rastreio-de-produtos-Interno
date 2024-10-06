@@ -4,6 +4,8 @@ Bom, só para mostrar como eu sou foda, e tb pq é um puta erro algumas pessoas 
 
 Devo tudo as minhas relações, principalmente com a liderança, dado que posso ter as melhores ideias do mundo, mas se não forem revisadas por pessoas que sabem o que pode dar errado, pode virar um tumor. Obrigado Sandro, Chiquinho e Yasmin, se quiserem referencia ou participar, caso vá para frente e vire um projeto grande, vocês merecem os creditos também.
 
+
+## Depois ajusto para mais profissional, mas agora é pessoal e quero curtir
 ## Desculpa o complexo de deus, é q fiz essa porra lombrado kkkkkkk
 
 ## Funcionalidades
