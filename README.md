@@ -49,7 +49,7 @@ classDiagram
     }
 
     class QrCodeService {
-        + BufferedImage gerarQRCode(String conteúdo)
+        // 
     }
 
     class GaiolaService {
