@@ -5,7 +5,7 @@ Agora que estou mais calmo, posso dizer o proposito desse projeto kjkkkkkk
 O sistema é basicamente um prototipo de como implementar um sistema de localização, onde um pacote é representado na memoria, e através de parametros, localiza-lo, além de ter embutido um sistema de paletização através de gaiolas.
 
 Pensei em orientação a objetos, por ser mais pragimatico e facil de implementar.
-## Desculpa o complexo de deus, é q fiz essa porra lombrado kkkkkkk
+
 
 ## Funcionalidades
 
