@@ -76,7 +76,7 @@ classDiagram
 
     Coletor "1" -- "1..*" Servidor: Conexão via HTTP/RESTful API
 ```
-
+- Um coletor se conecta a um servidor, um servidos se conecta a n-coletores
 ### 5.2. Diagrama de Fluxo
 ```mermaid
 graph TD
